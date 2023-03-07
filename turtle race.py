@@ -13,7 +13,7 @@ title =Label(canvas , text = "Turtle Race" , width = 20 , height = 1 , font = ("
 
 def start():
 	s1=TurtleScreen(canvas)
-	#s1.bgcolor("white")
+	s1.bgcolor("white")
 	
 	p1 = RawTurtle(s1)
 	
