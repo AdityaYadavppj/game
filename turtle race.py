@@ -11,7 +11,7 @@ tk["bg"] = "green"
 canvas = Canvas(tk,width = 700, height = 500).place(x = 20 , y = 10)
 title =Label(canvas , text = "Turtle Race" , width = 20 , height = 1 , font = ("Agency FB" , 40)).place(x = 200 , y = 10)
 
-'''def start():
+def start():
 	s1=TurtleScreen(canvas)
 	#s1.bgcolor("white")
 	
@@ -23,7 +23,7 @@ title =Label(canvas , text = "Turtle Race" , width = 20 , height = 1 , font = ("
 	p1.goto(-200,100)
 	
 start()
-'''
+
 
 
 tk.mainloop()
