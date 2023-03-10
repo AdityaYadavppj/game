@@ -1,2 +1,0 @@
-# game
-Turtle race
