@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do You Love Me?</title>
+<style>
+    body {
+        background-color: #f2c7c7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        text-align: center;
+    }
+    .image {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+    .question {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .buttons {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+        position: relative;
+    }
+    .button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: #fff;
+        color: #333;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+    }
+    .button:hover {
+        transform: scale(1.1);
+    }
+    .no-button {
+        position: relative;
+        transition: all 0.3s ease;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <img src="1.png" alt="Cute Cat" class="image">
+    <div class="question">Baby please 🥺</div>
+    <div class="buttons">
+        <a href="last page.html" class="button">Yes</a>
+        <button id="noButton" class="button no-button">No</button>
+    </div>
+</div>
+
+<script>
+    const noButton = document.getElementById('noButton');
+
+    noButton.addEventListener('mouseenter', () => {
+        // Randomly move the "No" button
+        const randomX = (Math.random() * 200) - 100; // Random value between -100 and 100
+        const randomY = (Math.random() * 100) - 50;  // Random value between -50 and 50
+
+        noButton.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        
+        // Reset position after a delay
+        setTimeout(() => {
+            noButton.style.transform = 'translate(0, 0)';
+        }, 600); // Delay before returning to original position
+    });
+</script>
+
+</body>
+</html>
